@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <title>Frontend Mentor | Results summary component</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        .attribution { font-size: 11px; text-align: center; }
+        .attribution a { color: hsl(228, 45%, 44%); }
+    </style>
+</head>
+<body>
+    <!-- HTML -->
+    <div id="root">
+        <main id="main" class="main"></main>
+        <footer class="footer attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+            Coded by <a href="https://github.com/danieldampe" target="_blank">danieldampe</a>.
+        </footer>
+    </div>
+    <!-- Components -->
+    <!-- Components / Results Summary -->
+    <template id="results-summary">
+        <div class="results-summary">
+            <div class="results-summary-your-result">
+                <h1 class="results-summary-title-your-result">Your Result</h1>
+                <div class="results-summary-circle">
+                    <div class="results-summary-total-score"></div>
+                    <div class="results-summary-max-score"></div>
+                </div>
+                <div class="results-summary-txt">
+                    <h3 class="results-summary-score-txt"></h3>
+                    <p class="results-summary-average-txt"></p>
+                </div>
+            </div>
+            <div class="results-summary-summary">
+                <h5 class="results-summary-title-summary">Summary</h5>
+                <div class="results-summary-body"></div>
+                <button class="results-summary-btn">Continue</button>
+            </div>
+        </div>
+    </template>
+    <!-- Components / Results Summary Tag -->
+    <template id="results-summary-tag">
+        <div class="results-summary-tag">
+            <div class="results-summary-tag-block-one">
+                <img class="results-summary-tag-icon">
+                <div class="results-summary-tag-category"></div>
+            </div>
+            <div class="results-summary-tag-block-two">
+                <span class="results-summary-tag-score"></span>
+                <span class="results-summary-tag-max-score"></span>
+            </div>
+            <div class="results-summary-tag-background"></div>
+        </div>
+    </template>
+    <!-- JS -->
+    <script type="module" src="./js/index.js"></script>
+</body>
+</html>
